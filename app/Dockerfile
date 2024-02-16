@@ -12,6 +12,7 @@ COPY ["Directory.Packages.props", "."]
 COPY ["backend/", "backend/"]
 COPY ["frontend/", "frontend/"]
 COPY ["shared/", "shared/"]
+COPY ["SharedWebComponents/", "SharedWebComponents/"]
 RUN dotnet restore "backend/MinimalApi.csproj"
 
 WORKDIR "/src/backend"
